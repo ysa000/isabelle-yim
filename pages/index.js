@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { TitleH1 } from '../themes/global-styles'
+import { TitleH1 } from '../styles/GlobalStyles'
+import { blink } from '../styles/KeyFrames'
 
 const Title = TitleH1.extend`
   color: #726e75;
@@ -11,6 +12,7 @@ const Title = TitleH1.extend`
   text-transform: uppercase;
   text-align: center;
   height: 50vh;
+  animation: ${blink} 5s linear infinite;
 `
 
 const Index = () => (
