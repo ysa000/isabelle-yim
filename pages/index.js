@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import ComingSoon from '../components/ComingSoon'
+import Hero from '../components/Hero'
+
 const Index = () => (
   <Fragment>
     <Layout>
-      <ComingSoon />
+      <Hero />
       <Footer />
     </Layout>
   </Fragment>

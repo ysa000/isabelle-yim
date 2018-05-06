@@ -6,6 +6,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 20px;
   }
 `
 
@@ -33,6 +34,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="../static/fontawesome-all.js" />
         </body>
       </html>
     )
