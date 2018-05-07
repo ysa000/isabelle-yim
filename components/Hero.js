@@ -3,43 +3,49 @@ import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
 
 const SectionWrapper = styled.section`
-  background-color: ${color.saltbox};
   display: flex;
   justify-content: center;
 `
 
 const TextWrapper = styled.div`
-  background-color: ${color.white};
+  padding: 15em 0;
+  color: ${color.outerSpace};
 `
 
 const LargeHeroTitle = styled.h1`
-  font-size: 5em;
+  font-size: 5.5em;
+  font-family: 'Gothic A1', sans-serif;
+  letter-spacing: 3px;
 `
 
 const TitleDescription = styled.h2`
-  font-size: 3em;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2em;
+  letter-spacing: 1px;
 `
 
 const IconWrapper = styled.div`
-  background-color: lightyellow;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-top: 2em;
 `
 
 const Icon = styled.i`
   cursor: pointer;
   padding: 5px;
-  color: silver;
+  font-size: 1.2em;
+  color: ${color.mandy};
   &:hover {
-    color: deeppink;
+    color: ${color.flint};
   }
 `
 
 const Hero = () => (
   <SectionWrapper>
     <TextWrapper>
-      <LargeHeroTitle>Isabelle YIM</LargeHeroTitle>
-      <TitleDescription>front end developer</TitleDescription>
+      <LargeHeroTitle>Isabelle Yim</LargeHeroTitle>
+      <TitleDescription>Front End Developer</TitleDescription>
       <IconWrapper>
         <Icon className="fab fa-instagram" />
         <Icon className="fab fa-github" />

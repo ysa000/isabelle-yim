@@ -3,12 +3,12 @@ import { color } from './GlobalStyles'
 
 export const blink = keyframes`
   0% {
-    color: ${color.saltbox};
+    color: ${color.flint};
   }
   50% {
-    color: ${color.deeppink};
+    color: ${color.mandy};
   }
   100% {
-    color: ${color.saltbox};
+    color: ${color.flint};
   }
 `
