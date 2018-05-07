@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
         <Head>
           <title>Isabelle Yim</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Gothic+A1|Noto+Sans|Shrikhand"
+            href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400|Noto+Sans:400,400i|Shrikhand"
             rel="stylesheet"
           />
           {this.props.styleTags}

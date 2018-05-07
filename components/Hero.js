@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
+import { apparition } from '../styles/KeyFrames'
 
 const SectionWrapper = styled.section`
   display: flex;
@@ -15,7 +16,12 @@ const TextWrapper = styled.div`
 const LargeHeroTitle = styled.h1`
   font-size: 5.5em;
   font-family: 'Gothic A1', sans-serif;
+  font-weight: 300;
   letter-spacing: 3px;
+  opacity: 0;
+  animation: ${apparition} 1.5s ease-in 1;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
 `
 
 const TitleDescription = styled.h2`
@@ -23,12 +29,21 @@ const TitleDescription = styled.h2`
   justify-content: flex-end;
   font-size: 2em;
   letter-spacing: 1px;
+  font-style: italic;
+  opacity: 0;
+  animation: ${apparition} 1.25s ease-in 1;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
 `
 
 const IconWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-top: 2em;
+  opacity: 0;
+  animation: ${apparition} 1s ease-in 1;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
 `
 
 const Icon = styled.i`

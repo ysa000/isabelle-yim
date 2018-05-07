@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { TitleH1 } from '../styles/GlobalStyles'
+import { TitleH1, color } from '../styles/GlobalStyles'
 import { blink } from '../styles/KeyFrames'
 
 const Title = TitleH1.extend`
-  color: #726e75;
+  color: ${color.flint};
   padding-top: 40vh;
   text-transform: uppercase;
   text-align: center;
