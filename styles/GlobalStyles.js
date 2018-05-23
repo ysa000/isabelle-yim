@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-//font-family: 'Gothic A1', sans-serif;
 //font-family: 'Noto Sans', sans-serif;
+//font-family: 'Gothic A1', sans-serif;
 //font-family: 'Shrikhand', cursive;
 
 // FONTS
@@ -17,8 +17,12 @@ export const TitleH1 = styled.h1`
 // COLORS
 
 export const color = {
+  //white
   white: '#FFFFFF',
-  black: '#000000',
-  deeppink: '#FF1493',
-  saltbox: '#726e75', // grey
+  quarterSpanishWhite: '#f8f4e3',
+  outerSpace: '#31393C', //black
+  flint: '#706c61',
+  bonJour: '#dbd9db', //pink
+  mandy: '#e5446d', //orange
+  salmon: '#ff8966',
 }
