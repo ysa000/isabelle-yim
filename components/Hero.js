@@ -20,7 +20,7 @@ const LargeHeroTitle = styled.h1`
   letter-spacing: 3px;
   opacity: 0;
   animation: ${apparition} 1.5s ease-in 1;
-  animation-delay: 0.4s;
+  animation-delay: 0.7s;
   animation-fill-mode: forwards;
 `
 
@@ -32,7 +32,7 @@ const TitleDescription = styled.h2`
   font-style: italic;
   opacity: 0;
   animation: ${apparition} 1.25s ease-in 1;
-  animation-delay: 0.6s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 `
 
@@ -42,7 +42,7 @@ const IconWrapper = styled.div`
   padding-top: 2em;
   opacity: 0;
   animation: ${apparition} 1s ease-in 1;
-  animation-delay: 0.8s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 `
 
@@ -62,9 +62,9 @@ const Hero = () => (
       <LargeHeroTitle>Isabelle Yim</LargeHeroTitle>
       <TitleDescription>Front End Developer</TitleDescription>
       <IconWrapper>
-        <Icon className="fab fa-instagram" />
         <Icon className="fab fa-github" />
         <Icon className="fab fa-linkedin" />
+        <Icon className="fab fa-instagram" />
         <Icon className="fas fa-globe" />
         <Icon className="far fa-envelope" />
       </IconWrapper>
