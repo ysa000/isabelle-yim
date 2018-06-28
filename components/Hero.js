@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
 import { apparition } from '../styles/KeyFrames'
 
+// get window.innerHeight to display the navbar underneath
+//let WinInnerHeight = window.innerHeight
+//console.log('hello: ', WinInnerHeight)
+
 const SectionWrapper = styled.section`
   display: flex;
   justify-content: center;

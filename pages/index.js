@@ -9,6 +9,7 @@ const Index = () => (
   <Fragment>
     <Layout>
       <Hero />
+      <Navbar />
       <Footer />
     </Layout>
   </Fragment>

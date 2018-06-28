@@ -22,7 +22,7 @@ export const color = {
   quarterSpanishWhite: '#f8f4e3',
   outerSpace: '#31393C', //black
   flint: '#706c61',
-  bonJour: '#dbd9db', //pink
-  mandy: '#e5446d', //orange
-  salmon: '#ff8966',
+  bonJour: '#dbd9db',
+  mandy: '#e5446d', //pink
+  salmon: '#ff8966', //orange
 }
