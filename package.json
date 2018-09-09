@@ -10,14 +10,18 @@
     "build": "next build"
   },
   "now": {
-    "alias": ["isabelleyim.now.sh", "www.isabelleyim.com", "isabelleyim.com"]
+    "alias": [
+      "isabelleyim.now.sh",
+      "www.isabelleyim.com",
+      "isabelleyim.com"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
-    "next": "^6.0.0",
+    "next": "^6.1.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "styled-components": "^3.2.6"

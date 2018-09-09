@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/ysa/.nvm/versions/node/v8.9.3/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js remove next
+
+PATH: 
+  /Users/ysa/.nvm/versions/node/v8.9.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "isabelle-yim",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "next",
+      "start": "next start",
+      "build": "next build"
+    },
+    "now": {
+      "alias": ["isabelleyim.now.sh", "www.isabelleyim.com", "isabelleyim.com"]
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "babel-plugin-styled-components": "^1.5.1",
+      "next": "^6.0.0",
+      "react": "^16.3.2",
+      "react-dom": "^16.3.2",
+      "styled-components": "^3.2.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: No lockfile in this directory. Run `yarn install` to generate one.
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:89389:13
+      at <anonymous>
