@@ -6,7 +6,7 @@ const navbarContent = ['Home', 'About', 'Contact']
 
 const Tab = styled.ul`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none;
   width: 100%;
 `
@@ -21,9 +21,16 @@ const TabItem = styled.li`
   text-transform: uppercase;
   padding: 6px 0;
   width: 75px;
+  margin: 0 5px;
+  &:first-child {
+    margin: 0 5px 0 0;
+  }
+  &:last-child {
+    margin: 0 0 0 5px;
+  }
   &:hover {
-    border: 1px solid ${color.mandy};
-    color: ${color.mandy};
+    border: 1px solid ${color.cerisePink};
+    color: ${color.cerisePink};
   }
 `
 

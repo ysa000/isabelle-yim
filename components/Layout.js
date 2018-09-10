@@ -7,6 +7,22 @@ const Layout = styled.div`
   transform: translateY(-50%);
   font-family: 'Noto Sans', sans-serif;
   width: 100%;
+
+  @media ${ScreenSize.mobileLandscape} {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+  @media ${ScreenSize.tablet} {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+  }
+  @media ${ScreenSize.desktop} {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+  }
 `
 
 export default Layout

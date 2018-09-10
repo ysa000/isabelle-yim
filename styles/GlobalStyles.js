@@ -27,6 +27,7 @@ export const color = {
   flint: '#706c61',
   bonJour: '#dbd9db',
   mandy: '#e5446d',
+  cerisePink: '#EA3788',
   salmon: '#ff8966',
   sizzlingRed: '#F52F57',
 }
