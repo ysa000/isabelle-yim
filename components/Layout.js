@@ -5,8 +5,10 @@ const Layout = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 0 20px;
   width: 100%;
+  font-family: 'Noto Sans', sans-serif;
 
   @media ${ScreenSize.mobileLandscape} {
     left: 50%;
