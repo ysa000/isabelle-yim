@@ -1,36 +1,43 @@
+import { Fragment } from 'react'
 import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
 
-const navbarContent = ['About', 'Projects', 'Contact']
+const navbarContent = ['Home', 'About', 'Contact']
 
 const Tab = styled.ul`
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
   list-style: none;
   width: 100%;
 `
 
 const TabItem = styled.li`
   cursor: pointer;
-  color: ${color.flint};
-  font-size: 16px;
+  border: 1px solid ${color.bonJour};
+  color: ${color.taupeGrey};
+  border-radius: 20px;
+  line-height: 12px;
   text-align: center;
-  text-decoration: none;
-  padding: 1.2em;
   text-transform: uppercase;
-  width: 33.33%;
+  padding: 6px 0;
+  width: 75px;
   &:hover {
-    color: ${color.outerSpace};
+    border: 1px solid ${color.mandy};
+    color: ${color.mandy};
   }
+`
+
+const TabItemLink = styled.a`
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
 `
 
 const Navbar = () => (
   <Tab>
     {navbarContent.map(content => (
       <TabItem>
-        <a>{content}</a>
+        <TabItemLink>{content}</TabItemLink>
       </TabItem>
     ))}
   </Tab>

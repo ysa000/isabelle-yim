@@ -1,19 +1,12 @@
 import styled from 'styled-components'
 import ScreenSize from '../styles/MediaQueries'
 
-const Layout = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid black;
-  margin: 0 auto;
-  width: 80%;
-  @media ${ScreenSize.tablet} {
-    width: 70%;
-  }
-  @media ${ScreenSize.desktop} {
-    width: 40%;
-  }
+const Layout = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
 `
 
 export default Layout

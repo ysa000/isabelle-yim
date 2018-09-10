@@ -1,16 +1,13 @@
 import { Fragment } from 'react'
-import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Hero from '../components/Hero'
+import Divider from '../components/Divider'
 
 const Index = () => (
   <Fragment>
     <Layout>
-      <Hero />
       <Navbar />
-      <Footer />
+      <Divider topMargin="30" />
     </Layout>
   </Fragment>
 )
