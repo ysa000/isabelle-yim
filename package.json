@@ -9,13 +9,6 @@
     "start": "next start",
     "build": "next build"
   },
-  "now": {
-    "alias": [
-      "isabelleyim.now.sh",
-      "www.isabelleyim.com",
-      "isabelleyim.com"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
