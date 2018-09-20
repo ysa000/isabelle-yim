@@ -71,9 +71,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-          <style>
-            @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-          </style>
           {this.props.styleTags}
         </Head>
         <body>

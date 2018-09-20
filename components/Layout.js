@@ -16,11 +16,13 @@ const Layout = styled.div`
     width: 70%;
   }
   @media ${ScreenSize.tablet} {
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
   }
   @media ${ScreenSize.desktop} {
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     max-width: 700px;
