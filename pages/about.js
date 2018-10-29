@@ -1,10 +1,9 @@
 import { Fragment } from 'react'
-
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 import Divider from '../components/Divider'
+import About from '../components/Content-about'
 import Social from '../components/Social'
-import Profile from '../components/Content-homepage'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,7 +15,7 @@ const Index = () => (
     <Layout>
       <Navbar />
       <Divider topMargin="30" />
-      <Profile />
+      <About />
       <Divider topMargin="20" />
       <Social />
     </Layout>

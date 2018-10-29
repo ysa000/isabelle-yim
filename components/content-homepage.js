@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
-import Divider from './Divider'
 
 const ProfileContent = styled.main`
   text-align: center;

@@ -9,7 +9,6 @@ import styled from 'styled-components'
 // COLORS
 
 export const color = {
-  //white
   white: '#FFFFFF',
   quarterSpanishWhite: '#f8f4e3',
   outerSpace: '#31393C',

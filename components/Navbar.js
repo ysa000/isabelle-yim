@@ -1,8 +1,14 @@
 import { Fragment } from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
+
 import { color } from '../styles/GlobalStyles'
 
-const navbarContent = ['Home', 'About', 'Contact']
+const navbarContent = [
+  { title: 'Home', url: '/' },
+  { title: 'About', url: '/about' },
+  { title: 'Contact', url: '/contact' },
+]
 
 const Tab = styled.ul`
   display: flex;
@@ -35,17 +41,23 @@ const TabItem = styled.li`
 `
 
 const TabItemLink = styled.a`
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.6px;
+  * {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+  }
 `
 
 const Navbar = () => (
   <Tab>
-    {navbarContent.map(content => (
-      <TabItem>
-        <TabItemLink>{content}</TabItemLink>
-      </TabItem>
+    {navbarContent.map(({ title, url }) => (
+      <TabItemLink>
+        <Link prefetch href={url}>
+          <TabItem>{title}</TabItem>
+        </Link>
+      </TabItemLink>
     ))}
   </Tab>
 )
