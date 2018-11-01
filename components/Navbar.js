@@ -3,6 +3,8 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 import { color } from '../styles/GlobalStyles'
+import ScreenSize from '../styles/MediaQueries'
+import Divider from './Divider'
 
 const navbarContent = [
   { title: 'Home', url: '/' },
@@ -27,12 +29,9 @@ const TabItem = styled.li`
   text-transform: uppercase;
   padding: 6px 0;
   width: 75px;
-  margin: 0 5px;
-  &:first-child {
-    margin: 0 5px 0 0;
-  }
-  &:last-child {
-    margin: 0 0 0 5px;
+  margin: 0 10px 0;
+  @media ${ScreenSize.tablet} {
+    margin: 0 30px 0;
   }
   &:hover {
     border: 1px solid ${color.cerisePink};
@@ -42,7 +41,6 @@ const TabItem = styled.li`
 
 const TabItemLink = styled.a`
   * {
-    color: inherit;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -51,15 +49,18 @@ const TabItemLink = styled.a`
 `
 
 const Navbar = () => (
-  <Tab>
-    {navbarContent.map(({ title, url }) => (
-      <TabItemLink>
-        <Link prefetch href={url}>
-          <TabItem>{title}</TabItem>
-        </Link>
-      </TabItemLink>
-    ))}
-  </Tab>
+  <Fragment>
+    <Tab>
+      {navbarContent.map(({ title, url }) => (
+        <TabItemLink>
+          <Link prefetch href={url}>
+            <TabItem>{title}</TabItem>
+          </Link>
+        </TabItemLink>
+      ))}
+    </Tab>
+    <Divider topMargin="30" />
+  </Fragment>
 )
 
 export default Navbar

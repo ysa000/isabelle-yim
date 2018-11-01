@@ -14,9 +14,7 @@ const Index = () => (
   <Fragment>
     <Layout>
       <Navbar />
-      <Divider topMargin="30" />
       <Contact />
-      <Divider topMargin="20" />
       <Social />
     </Layout>
   </Fragment>

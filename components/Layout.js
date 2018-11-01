@@ -22,7 +22,7 @@ const Layout = styled.div`
     width: 60%;
   }
   @media ${ScreenSize.desktop} {
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     max-width: 700px;

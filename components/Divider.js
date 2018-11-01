@@ -1,11 +1,17 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { color } from '../styles/GlobalStyles'
 
-const Divider = styled.hr`
-  border-bottom: none;
-  border-top: 1px solid ${color.bonJour};
-  margin-top: ${props => (props.topMargin ? props.topMargin : 0)}px;
-  margin-bottom: 0;
+const drawline = keyframes`
+  0% { width: 0%; }
+  100% { width: 100%; }
 `
 
+const Divider = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: ${color.taupeGrey};
+  margin-top: ${props => (props.topMargin ? props.topMargin : 0)}px;
+  margin-bottom: 0;
+  animation: ${drawline} 3s 1;
+`
 export default Divider

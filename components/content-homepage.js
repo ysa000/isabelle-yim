@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
+import Screensize from '../styles/MediaQueries'
 
 const ProfileContent = styled.main`
   text-align: center;
@@ -11,10 +12,13 @@ const ProfileContent = styled.main`
 `
 
 const ProfilePicture = styled.img`
-  border-radius: 50%;
-  max-width: 100%;
+  border-radius: 2px;
+  max-width: 150px;
   height: auto;
   margin-bottom: 40px;
+  ${Screensize.desktop} {
+    max-width: 250px;
+  }
 `
 
 const ProfileName = styled.h1`
@@ -32,7 +36,7 @@ const ProfileTitle = styled.h2`
 const Profile = () => (
   <ProfileContent>
     <ProfilePicture
-      src="http://placekitten.com/g/200/200"
+      src="/static/IMG_1172.jpg"
       alt="Isabelle Yim profile picture"
     />
     <ProfileName>Isabelle Yim</ProfileName>

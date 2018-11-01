@@ -1,8 +1,16 @@
+import { Fragment } from 'react'
 import styled from 'styled-components'
 import { color } from '../styles/GlobalStyles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Divider from './Divider'
 
-const socialNetworks = ['instagram', 'github', 'twitter', 'linkedin-in']
+// const socialNetworks = ['instagram', 'github', 'twitter', 'linkedin-in']
+const socialNetworks = [
+  { name: 'instagram', url: 'https://www.instagram.com/ysa_000/' },
+  { name: 'github', url: 'https://github.com/ysa000' },
+  { name: 'twitter', url: 'https://twitter.com/IsabelleYim' },
+  { name: 'linkedin-in', url: 'https://www.linkedin.com/in/isabelleyim/' },
+]
 
 const SocialWrapper = styled.ul`
   display: flex;
@@ -35,15 +43,18 @@ const SocialItem = styled.li`
 `
 
 const Social = () => (
-  <SocialWrapper>
-    {socialNetworks.map(socialNetwork => (
-      <SocialItem>
-        <a href="#">
-          <FontAwesomeIcon icon={['fab', `${socialNetwork}`]} />
-        </a>
-      </SocialItem>
-    ))}
-  </SocialWrapper>
+  <Fragment>
+    <Divider topMargin="20" />
+    <SocialWrapper>
+      {socialNetworks.map(socialNetwork => (
+        <SocialItem>
+          <a href={socialNetwork.url} target="_blank">
+            <FontAwesomeIcon icon={['fab', `${socialNetwork.name}`]} />
+          </a>
+        </SocialItem>
+      ))}
+    </SocialWrapper>
+  </Fragment>
 )
 
 export default Social

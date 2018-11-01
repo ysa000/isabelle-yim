@@ -1,12 +1,5 @@
 import React, { Fragment } from 'react'
-import styled from 'styled-components'
-import { color } from '../styles/GlobalStyles'
-
-const Content = styled.p`
-  line-height: 24px;
-  padding: 30px 130px;
-  color: ${color.outerSpace};
-`
+import { Content } from '../styles/GlobalStyles'
 
 const About = () => (
   <Content>

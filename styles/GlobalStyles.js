@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ScreenSize from './MediaQueries'
 
 // font-family: 'Noto Sans', sans-serif;
 // font-family: 'Gothic A1', sans-serif;
@@ -20,3 +21,12 @@ export const color = {
   salmon: '#ff8966',
   sizzlingRed: '#F52F57',
 }
+
+export const Content = styled.p`
+  line-height: 24px;
+  padding: 30px;
+  @media ${ScreenSize.desktop} {
+    padding: 30px 130px;
+  }
+  color: ${color.taupeGrey};
+`
