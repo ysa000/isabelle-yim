@@ -1,23 +1,15 @@
 import { Fragment } from 'react'
-import Layout from '../components/Layout'
-import Navbar from '../components/Navbar'
-import Divider from '../components/Divider'
-import Contact from '../components/Content-contact'
-import Social from '../components/Social'
-
+import { Content } from '../styles/GlobalStyles'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fab)
 
-const Index = () => (
+const Contact = () => (
   <Fragment>
-    <Layout>
-      <Navbar />
-      <Contact />
-      <Social />
-    </Layout>
+    <Content>Feel free to connect with me</Content>
+    <Content>I'll be happy to chat</Content>
   </Fragment>
 )
 
-export default Index
+export default Contact

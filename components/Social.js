@@ -47,7 +47,7 @@ const Social = () => (
     <Divider topMargin="20" />
     <SocialWrapper>
       {socialNetworks.map(socialNetwork => (
-        <SocialItem>
+        <SocialItem key={socialNetwork.url}>
           <a href={socialNetwork.url} target="_blank">
             <FontAwesomeIcon icon={['fab', `${socialNetwork.name}`]} />
           </a>

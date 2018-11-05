@@ -1,10 +1,9 @@
 import { Fragment } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
-
+import Divider from './Divider'
 import { color } from '../styles/GlobalStyles'
 import ScreenSize from '../styles/MediaQueries'
-import Divider from './Divider'
 
 const navbarContent = [
   { title: 'Home', url: '/' },
@@ -52,7 +51,7 @@ const Navbar = () => (
   <Fragment>
     <Tab>
       {navbarContent.map(({ title, url }) => (
-        <TabItemLink>
+        <TabItemLink key={title}>
           <Link prefetch href={url}>
             <TabItem>{title}</TabItem>
           </Link>

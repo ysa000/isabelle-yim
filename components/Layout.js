@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import ScreenSize from '../styles/MediaQueries'
+import Navbar from '../components/Navbar'
+import Social from '../components/Social'
 
-const Layout = styled.div`
+const Wrapper = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -28,5 +30,13 @@ const Layout = styled.div`
     max-width: 700px;
   }
 `
+
+const Layout = ({ children }) => (
+  <Wrapper>
+    <Navbar />
+    {children}
+    <Social />
+  </Wrapper>
+)
 
 export default Layout
