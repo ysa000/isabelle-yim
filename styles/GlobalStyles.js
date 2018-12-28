@@ -24,9 +24,10 @@ export const color = {
 
 export const Content = styled.p`
   line-height: 24px;
-  padding: 30px;
+  padding: 15px 30px;
+  line-height: 1.7em;
   @media ${ScreenSize.desktop} {
-    padding: 30px 130px;
+    padding: 15px 80px;
   }
   color: ${color.taupeGrey};
 `

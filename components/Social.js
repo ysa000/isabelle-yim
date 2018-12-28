@@ -44,7 +44,7 @@ const SocialItem = styled.li`
 
 const Social = () => (
   <Fragment>
-    <Divider topMargin="20" />
+    <Divider />
     <SocialWrapper>
       {socialNetworks.map(socialNetwork => (
         <SocialItem key={socialNetwork.url}>
