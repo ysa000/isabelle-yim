@@ -14,6 +14,9 @@ const ProfileContent = styled.main`
   color: ${color.outerSpace};
   font-family: 'Gothic A1', sans-serif;
   letter-spacing: 0.25em;
+  @media (min-width: 768px) {
+    min-width: auto;
+  }
 `
 
 const ProfilePicture = styled.img`

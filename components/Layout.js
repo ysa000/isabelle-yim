@@ -5,36 +5,27 @@ import Social from '../components/Social'
 
 const Wrapper = styled.div`
   font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  /* @media ${ScreenSize.mobileLandscape} {
-    left: 50%;
-    transform: translateX(-50%);
+  @media (min-width: 768px) {
     width: 70%;
-  } */
-  @media ${ScreenSize.tablet} {
-  position: absolute;
-  /* top: 50%; */
-  transform: translateY(-50%);
-  box-sizing: border-box;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
+    margin: 30% auto 0;
   }
-  @media ${ScreenSize.desktop} {
-  position: absolute;
-  transform: translateY(-50%);
-  box-sizing: border-box;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 700px;
+  @media (min-width: 1024px) {
+    width: 50%;
+    margin: 10% auto 0;
   }
 `
 
 const Scrollable = styled.div`
-  max-height: calc(100vh - 150px);
-  overflow-y: scroll;
+  @media (max-width: 640px) {
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+  }
+  min-height: 370px;
 `
 
 const Layout = ({ children }) => (

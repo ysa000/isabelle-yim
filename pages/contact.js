@@ -6,7 +6,13 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  min-height: 350px;
+  min-height: 360px;
+  @media (orientation: landscape) {
+    min-height: auto;
+  }
+  @media (min-width: 1023px) {
+    min-height: 370px;
+  }
 `
 library.add(fab)
 
