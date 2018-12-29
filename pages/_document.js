@@ -1,14 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet, injectGlobal } from 'styled-components'
-
-injectGlobal`
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', Arial, sans-serif;
-    font-size: 20px;
-  }
-`
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -24,17 +15,16 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Isabelle Yim</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400|Noto+Sans:400,400i|Shrikhand"
+            href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400|Noto+Sans:400,400i|Nova+Mono|Open+Sans:300,400,600,700|Roboto"
             rel="stylesheet"
           />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           {this.props.styleTags}
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="../static/fontawesome-all.js" />
         </body>
       </html>
     )
