@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "regions": "all",
+  "regions": ["all"],
   "alias": ["isabelleyim.com", "www.isabelleyim.com", "isabelleyim.now.sh"],
   "builds": [
     {
