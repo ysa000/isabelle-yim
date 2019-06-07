@@ -25,6 +25,10 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script async src="https://ping.achkouyan.com/hi.js" />
+          <noscript>
+            <img src="https://ping.achkouyan.com/ping.gif" alt="" />
+          </noscript>
         </body>
       </html>
     )
