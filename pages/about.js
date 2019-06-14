@@ -23,6 +23,10 @@ const AboutMe = () => (
       lifestyle, and to become a vegetarian for a better world. I am currently a
       happy front end developer @SeLoger, supported by @Abbeal since 2017.
     </Content>
+    <Content>
+      Please do not hesitate to connect with me if you wish to get to know more,
+      I'll be happy to chat.
+    </Content>
   </Fragment>
 )
 

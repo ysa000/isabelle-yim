@@ -8,7 +8,6 @@ import ScreenSize from '../styles/MediaQueries'
 const navbarContent = [
   { title: 'Home', url: '/' },
   { title: 'About', url: '/about' },
-  { title: 'Contact', url: '/contact' },
 ]
 
 const Tab = styled.ul`
