@@ -56,10 +56,12 @@ const ProfilePicture = styled.img`
   border-radius: 5px;
   height: auto;
   max-width: 150px;
-  margin: 0 3rem 2rem 0;
+  margin: 0 0 2rem 0;
+  @media ${ScreenSize.tablet} {
+    margin: 0 2rem 2rem 0;
+  }
   @media ${ScreenSize.desktop} {
     max-width: 300px;
-    margin: 0 0 2rem 0;
   }
 `
 
