@@ -77,7 +77,7 @@ const Link = styled.a`
 const About = () => (
   <ContentWrapper>
     <ArrowsWrapper>
-      <FontAwesomeIcon icon={faAngleDoubleUp} />
+      <FontAwesomeIcon icon={faAngleDoubleUp} size="sm" />
     </ArrowsWrapper>
     <ContentInner>
       <Content>
