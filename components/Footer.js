@@ -7,6 +7,7 @@ import ScreenSize from '../styles/media-queries'
 const FooterContent = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: ${color.nyanza};
   font-family: 'Nova Mono', monospace;
   font-size: 1rem;
@@ -20,9 +21,9 @@ const FooterContent = styled.div`
 
 const Footer = () => (
   <FooterContent>
-    <p>
-      2021 <FontAwesomeIcon icon={faPeace} size="xs" /> Isabelle Yim
-    </p>
+    <p>2021&nbsp;</p>
+    <FontAwesomeIcon icon={faPeace} size="xs" />
+    <p>&nbsp;Isabelle Yim</p>
   </FooterContent>
 )
 
