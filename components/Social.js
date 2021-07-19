@@ -1,12 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faInstagram,
-  faGithub,
-  faTwitter,
-  faLinkedinIn,
-} from '@fortawesome/free-brands-svg-icons'
 import { color } from '../styles/global-styles'
 
 const socialNetworks = [
