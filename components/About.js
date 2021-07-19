@@ -8,7 +8,7 @@ const ContentWrapper = styled.div`
   position: relative;
   font-size: 1rem;
   background-color: ${color.nyanza};
-  z-index: 1;
+  z-index: 2;
   ::before {
     content: '';
     display: block;
