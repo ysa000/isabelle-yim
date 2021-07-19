@@ -1,20 +1,29 @@
 import styled from 'styled-components'
-import { color } from '../styles/GlobalStyles'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPeace } from '@fortawesome/free-solid-svg-icons'
+import { color } from '../styles/global-styles'
+import ScreenSize from '../styles/media-queries'
 
-const Text = styled.p`
-  font-size: 12px;
-  color: ${color.bonJour};
-  padding: 1.5em 0;
-`
-
-const FooterWrapper = styled.div`
-  text-align: center;
+const FooterContent = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: ${color.nyanza};
+  font-family: 'Nova Mono', monospace;
+  font-size: 1rem;
+  color: ${color.taupeGrey};
+  padding: 1.5rem 0;
+  z-index: 2;
+  @media ${ScreenSize.desktop} {
+    padding: 2rem 0;
+  }
 `
 
 const Footer = () => (
-  <FooterWrapper>
-    <Text>💖 Isabelle Yim - 2018</Text>
-  </FooterWrapper>
+  <FooterContent>
+    <p>
+      2021 <FontAwesomeIcon icon={faPeace} /> Isabelle Yim
+    </p>
+  </FooterContent>
 )
 
 export default Footer

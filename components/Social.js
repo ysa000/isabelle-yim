@@ -1,27 +1,32 @@
-import { Fragment } from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
-import { color } from '../styles/GlobalStyles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Divider from './Divider'
+import {
+  faInstagram,
+  faGithub,
+  faTwitter,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons'
+import { color } from '../styles/global-styles'
 
-// const socialNetworks = ['instagram', 'github', 'twitter', 'linkedin-in']
 const socialNetworks = [
-  { name: 'instagram', url: 'https://www.instagram.com/ysa_000/' },
-  { name: 'github', url: 'https://github.com/ysa000' },
-  { name: 'twitter', url: 'https://twitter.com/IsabelleYim' },
-  { name: 'linkedin-in', url: 'https://www.linkedin.com/in/isabelleyim/' },
+  { name: faInstagram, url: 'https://www.instagram.com/ysa_000/' },
+  { name: faGithub, url: 'https://github.com/ysa000' },
+  { name: faTwitter, url: 'https://twitter.com/IsabelleYim' },
+  { name: faLinkedinIn, url: 'https://www.linkedin.com/in/isabelleyim/' },
 ]
 
-const SocialWrapper = styled.ul`
+const SocialNetworksWrapper = styled.ul`
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 25px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  width: 20%;
+  margin-top: ${(props) => (props.marginTop ? `${props.marginTop}px` : 0)};
 `
 
 const SocialItem = styled.li`
   cursor: pointer;
-  border: 1px solid ${color.bonJour};
   border-radius: 50%;
   padding: 5px;
   margin-right: 10px;
@@ -35,26 +40,24 @@ const SocialItem = styled.li`
     }
   }
   &:hover {
-    border: 1px solid ${color.cerisePink};
     & > a > .svg-inline--fa {
-      color: ${color.cerisePink};
+      color: ${color.nyanza};
     }
   }
 `
 
-const Social = () => (
-  <Fragment>
-    <Divider />
-    <SocialWrapper>
-      {socialNetworks.map(socialNetwork => (
-        <SocialItem key={socialNetwork.url}>
-          <a href={socialNetwork.url} target="_blank">
-            <FontAwesomeIcon icon={['fab', `${socialNetwork.name}`]} />
+const Social = (props) => (
+  <SocialNetworksWrapper marginTop={props.marginTop}>
+    {socialNetworks.map((socialNetwork) => (
+      <SocialItem key={socialNetwork.url}>
+        <Link href={socialNetwork.url}>
+          <a target="_blank">
+            <FontAwesomeIcon icon={socialNetwork.name} />
           </a>
-        </SocialItem>
-      ))}
-    </SocialWrapper>
-  </Fragment>
+        </Link>
+      </SocialItem>
+    ))}
+  </SocialNetworksWrapper>
 )
 
 export default Social

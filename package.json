@@ -1,27 +1,24 @@
 {
-  "name": "isabelle-yim",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "build": "next build"
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.18",
-    "@fortawesome/free-brands-svg-icons": "5.8.2",
-    "@fortawesome/free-regular-svg-icons": "5.8.2",
-    "@fortawesome/free-solid-svg-icons": "5.8.2",
-    "@fortawesome/react-fontawesome": "0.1.4",
-    "babel-plugin-styled-components": "1.10.0",
-    "next": "8.1.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "styled-components": "4.2.1"
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "next": "^10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.13.2"
   }
 }
