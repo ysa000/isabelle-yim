@@ -9,6 +9,13 @@ const ProfileWrapper = styled.section`
   width: 100vw;
   background-color: ${color.raisinBlack};
   font-family: 'Noto Sans', sans-serif;
+  @media ${ScreenSize.mobilePortrait} and (-webkit-min-device-pixel-ratio: 0) {
+    height: 0;
+    min-height: -webkit-fill-available;
+  }
+  @supports (-moz-appearance: none) {
+    background-color: ${color.cerisePink};
+  }
 `
 
 const ProfileInner = styled.div`
@@ -37,6 +44,9 @@ const ProfileContent = styled.div`
   font-size: 6rem;
   font-weight: bold;
   letter-spacing: -0.125rem;
+  @media ${ScreenSize.mobileLandscape} {
+    flex-direction: row;
+  }
   @media ${ScreenSize.tablet} {
     flex-direction: row;
   }
@@ -57,6 +67,9 @@ const ProfilePicture = styled.img`
   height: auto;
   max-width: 150px;
   margin: 0 0 2rem 0;
+  @media ${ScreenSize.mobileLandscape} {
+    margin: 0 2rem 2rem 0;
+  }
   @media ${ScreenSize.tablet} {
     margin: 0 2rem 2rem 0;
   }

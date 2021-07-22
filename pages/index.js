@@ -8,6 +8,10 @@ export default function Home() {
     <>
       <Head>
         <title>Isabelle Yim</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://use.fontawesome.com/releases/v5.15.3/css/svg-with-js.css"
