@@ -13,9 +13,6 @@ const ProfileWrapper = styled.section`
     height: 0;
     min-height: -webkit-fill-available;
   }
-  @supports (-moz-appearance: none) {
-    background-color: ${color.cerisePink};
-  }
 `
 
 const ProfileInner = styled.div`
