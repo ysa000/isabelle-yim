@@ -9,6 +9,7 @@ const ContentWrapper = styled.div`
   font-size: 1rem;
   background-color: ${color.nyanza};
   z-index: 2;
+  width: 100vw;
   ::before {
     content: '';
     display: block;
@@ -20,6 +21,11 @@ const ContentWrapper = styled.div`
     background-color: ${color.nyanza};
     clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
     z-index: 2;
+  }
+  @media ${ScreenSize.mobileLandscape} {
+    ::before {
+      clip-path: polygon(50% 10%, 0% 100%, 100% 100%);
+    }
   }
   @media ${ScreenSize.desktop} {
     font-size: 1.5rem;
@@ -39,6 +45,9 @@ const ArrowsWrapper = styled.div`
   z-index: 2;
   color: ${color.taupeGrey};
   opacity: 0.8;
+  @media ${ScreenSize.mobileLandscape} {
+    top: -80px;
+  }
   @media ${ScreenSize.desktop} {
     top: -80px;
   }
