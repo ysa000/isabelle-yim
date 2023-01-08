@@ -20,5 +20,8 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.13.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
