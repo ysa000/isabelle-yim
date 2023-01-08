@@ -21,7 +21,7 @@ const FooterContent = styled.div`
 
 const Footer = () => (
   <FooterContent>
-    <p>2021&nbsp;</p>
+    <p>2023&nbsp;</p>
     <FontAwesomeIcon icon={faPeace} size="xs" />
     <p>&nbsp;Isabelle Yim</p>
   </FooterContent>
